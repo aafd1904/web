@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DetFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navegador -->
+    <header>
+        <div class="contenedor">
+            <a href="index.html" class="logo">
+                <h2>DETFLIX</h2>
+            </a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="estrenos.html" class="activo">Estrenos</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="registro.html">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <div class="pelicula-principal">
+            <div class="contenedor">
+                <h3 class="titulo">Harry Potter y La Orden del Fénix</h3>
+                <p class="descripcion">
+                    Harry Potter regresa por quinto año a Hogwarts aún sacudido por la
+                    tragedia ocurrida en el Torneo de los Tres Magos. Debido a que el Ministro de
+                    la Magia niega el regreso de Lord Voldemort, Harry se convierte en el centro
+                    de atención de la comunidad mágica. Mientras lucha con sus problemas en el colegio,
+                    incluyendo a la nueva profesora Dolores Umbridge,
+                    intentará aprender más sobre la misteriosa Orden del Fénix.
+                </p>
+                <button role="button" class="boton">Reproducir</button>
+                <button role="button" class="boton">Más Información</button>
+            </div>
+        </div>
+
+
+        <div class="peliculas-estreno contenedor">
+            <div class="contenedor-titulo-controles">
+                <h3>Estrenos</h3>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+                <button role="button" id="flecha-izquierda-estrenos" class="flecha-izquierda"><i
+                        class="fa-solid fa-less-than"></i></button>
+
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img1.jpg" alt="img1Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img2.jpg" alt="img2Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img3.jpg" alt="img3Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img4.jpg" alt="img4Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img5.jpg" alt="img5Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img6.jpg" alt="img6Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img7.jpg" alt="img7Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img8.jpg" alt="img8Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img9.jpg" alt="img9Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img10.jpg" alt="img10Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img11.jpg" alt="img11Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img12.jpg" alt="img12Estrenos"></a>
+                        </div>
+
+                        <div class="pelicula">
+                            <a href="#"><img src="imagenes/estrenos/img13.jpg" alt="img13Estrenos"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button role="button" id="flecha-derecha-estrenos" class="flecha-derecha"><i
+                        class="fa-solid fa-greater-than"></i></button>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="contenedorF">
+
+            <div class="footer-row">
+
+                <div class="footer-links">
+                    <h4>Compañía</h4>
+
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Afiliados</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Métodos de pago</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+
+                    <ul>
+                        <li><a href="#">detflix@gmail.com</a></li>
+                        <li><a href="#">926587604</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+
+                    <div class="social-link">
+                        <a href="https://www.facebook.com/?locale=es_ES"><i
+                                class="fab fa-facebook-square"></i><span>Facebook</span></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                        <a href="https://x.com/?lang=es&mx=2"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+                        <a href="https://www.twitch.tv/"><i class="fab fa-twitch"></i><span>twitch</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/635c2c6495.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

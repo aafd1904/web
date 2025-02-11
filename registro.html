@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DetFlix</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navegador -->
+    <header>
+        <div class="contenedor">
+            <a href="index.html" class="logo">
+                <h2>DETFLIX</h2>
+            </a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="estrenos.html">Estrenos</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="registro.html" class="activo">Registro</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="registro">
+
+        <div class="contenedorRegistro">
+            <div class="barra-progreso">
+                <div class="progreso"></div>
+            </div>
+            <form action="" id="formulario" class="formulario">
+
+                <!-- Usuario -->
+                <div class="formulario__grupo" id="grupo__usuario">
+                    <label for="usuario" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario"
+                            placeholder="Ingresa el usuario">
+
+                    </div>
+                    <p class="formulario__input-error"> El usuario debe tener de 4 a 16 dígitos, conteniedo números,
+                        letras y guión bajo.</p>
+                </div>
+
+                <!-- Nombre -->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre"
+                            placeholder="Ingresa el nombre">
+
+                    </div>
+                    <p class="formulario__input-error">El nombre no puede tener numeros ni guiones, etc.</p>
+                </div>
+
+
+                <!-- Contraseña -->
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password"
+                            placeholder="Ingresa la contraseña">
+                    </div>
+                    <p class="formulario__input-error"> La contraseña debe tener de 4 a 12 dígitos.</p>
+                </div>
+
+                <!-- Contraseña 2-->
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label">Confirmar contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2" placeholder="">
+                    </div>
+                    <p class="formulario__input-error"> Las contraseñas no son iguales.</p>
+                </div>
+
+                <!-- Correo -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">correo</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo"
+                            placeholder="correo@correo.com">
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede tener letras, numeros, puntos y guiones.</p>
+                </div>
+
+                <!-- telefono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">telefono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono"
+                            placeholder="000000000">
+                    </div>
+                    <p class="formulario__input-error"></p>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fa-solid fa-circle-exclamation"></i><b>Error: </b>Rellena el formulario correctamente
+                    </p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="botonRegistrar">Registrar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Te has registrado correctamente.
+                    </p>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+
+
+
+    <script src="https://kit.fontawesome.com/635c2c6495.js" crossorigin="anonymous"></script>
+    <script src="scriptFormulario.js"></script>
+
+</body>
+
+</html>
